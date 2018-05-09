@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fcfcfc</color>
+    <color name="colorPrimaryDark">@color/black</color> <!-- #CACACA -->
+    <color name="colorAccent">#f15352</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="red">#f15352</color>
+    <color name="black">#000000</color>
+    <color name="orange">#F9A436</color>
+
+    <color name="light_red">#FF6868</color>
+    <color name="light_pink">#FF687B</color>
+
+
+    <color name="dark_gray">#333333</color>
+    <color name="gray">#535353</color>
+    <color name="light_gray">#b3b3b3</color>
+    <color name="white_gray">#d1d1d1</color>
+    <color name="white_gray_background">#efeff4</color>
+    <color name="gray_background_transparent">#96535353</color>
+    <color name="ripple_light">#1f000000</color>
+    <color name="gray_text_unavailable">#bdbdbd</color>
+
+    <color name="dark_text">#434155</color>
+    <color name="light_text">#858585</color>
+
+
+    <drawable name="touchFeedback">#CFD8DC</drawable>
+
+
+    <color name="dark">#424242</color>
+    <color name="grey">#8C8C8C</color>
+    <color name="line">#EEEEEE</color>
+    <color name="background">#F9F9FA</color>
+
+    <color name="blue">#5555ff</color>
+
+    <color name="greyBackground">#FFCFCFCF</color>
+
+
+    <!--item select bg-->
+    <color name="item_pressed">#666666</color>
+    <color name="item_focused">#666666</color>
+    <color name="item_bg">#FFFFFF</color>
+
+
+</resources>

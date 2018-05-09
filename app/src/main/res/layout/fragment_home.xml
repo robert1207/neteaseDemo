@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvGoodsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_gray_background"
+        />
+
+    <RelativeLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_header_size">
+
+        <ImageView
+            android:id="@+id/info_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_header_size"
+            android:background="@color/white_gray"
+            android:scaleType="fitXY"
+            android:src="@drawable/info_bg"/>
+        <View
+            android:id="@+id/gray_cover"
+            android:layout_height="@dimen/home_header_size"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"/>
+        <RelativeLayout
+            android:id="@+id/info_panel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_header_size"
+            android:layout_alignParentTop="true"
+            >
+
+            <ImageView
+                android:id="@+id/usericon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"/>
+
+            <Button
+                android:id="@+id/info_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="+关注"
+                android:textColor="@color/white"
+                android:background="#bbff3333"
+                />
+            <LinearLayout
+                android:layout_below="@id/usericon"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/info_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="这是信息文字"/>
+                <TextView
+                    android:id="@+id/info_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="这是信息文字"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tabstrip_height"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_coner_up">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我喜欢的音乐"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        >
+        <View
+            android:id="@+id/actTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            />
+
+        <RelativeLayout
+            android:layout_below="@id/actTitleBar"
+            android:id="@+id/rlNavBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_bar_height"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_centerVertical="true"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/actionbar_back"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:layout_toRightOf="@id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="这是标题（Hello）"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
